@@ -45,5 +45,5 @@ else:
   print("You are ", result, "% more efficent than just using car to travel!", sep = "")
 
 #Grams of CO2 emmision saved in actual compared to all car in the total CO2
-savedCO2 = round((totalCO2 - actualCO2), 1)
+savedCO2 = totalCO2 - actualCO2
 print("You saved:", savedCO2, "grams of CO2")
