@@ -1,6 +1,7 @@
-# SaseVolHacks
 #intialized the values for car, bus, rail, and carbon neutral 
-# of transport*/
+# of transport
+#Kilograms of carbon diocide per passenger kilometer
+#grams was too big for python to calculate.
 car = 0.192
 bus = 0.105
 neutral = 0.0
@@ -37,6 +38,9 @@ if result == 100:
   print("You are carbon neutral! Congrats!")
 else: 
   print("You are", result, "% more efficent than just using car to travel!")
+
+#Grams of CO2 eliminated in acutal compared to completely car in the total distance
+savedCO2 = totalCO2 - actualCO2!")
 
 #Grams of CO2 eliminated in acutal compared to completely car in the total distance
 savedCO2 = totalCO2 - actualCO2
