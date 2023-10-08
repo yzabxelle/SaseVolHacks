@@ -9,8 +9,10 @@ class Gamification():
 
         # Reads from excel file to calculate XP
         for row in reader:
-            # Math here <<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-            totalXP = "something"
+            #Grams of CO2 emmision saved in actual compared to all car in the total CO2
+            #savedCO2 math in 'Math branch'
+            savedCO2 = int(totalCO2 - actualCO2)
+            totalXP = savedCO2
 
         file.close('dataLog.csv')
         return totalXP
