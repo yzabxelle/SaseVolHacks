@@ -19,6 +19,9 @@ kmRail = float(input("Kilometers in Rail: "))
 #input from user for kilometers in Carbon Neutral
 kmCarbonNull = float(input("Kilometers in Biking/Walking/Running: "))
 
+if kmCar == kmBus == kmRail == kmCarbonNull == 0:
+  print("Have some walk... Please...")
+  exit()
 #Calculating total distance traveled
 #Theorically if distance is traveled by only car
 totalDis = kmCar + kmBus + kmRail + kmCarbonNull
