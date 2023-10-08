@@ -1,3 +1,5 @@
+#CO2 calculations math part
+
 #intialized the values for car, bus, rail, and carbon neutral of transport
 #Kilograms of carbon diocide per passenger kilometer
 #grams was too big for python to calculate.
@@ -19,24 +21,26 @@ kmRail = float(input("Kilometers in Rail: "))
 kmCarbonNull = float(input("Kilometers in Biking/Walking/Running: "))
 
 #Calculating total distance traveled
+#Theorically if distance is traveled by only car
 totalDis = kmCar + kmBus + kmRail + kmCarbonNull
 
 #Calculating total CO2 if in car
 totalCO2 = totalDis * car
 
 #Calculating actual CO2 in all modes of transport plus car
-actualCO2 = (car * kmCar)+(bus * kmBus)+(rail * kmRail)+(neutral * kmCarbonNull)
+#actualCO2 is the users CO2 emmision
+actualCO2 = (car * kmCar) + (bus * kmBus) + (rail * kmRail) + (neutral * kmCarbonNull)
 
-#More efficent by percentage
+#result of efficency by percentage
+result = round(100 - (float(actualCO2) / float(totalCO2) * 100), 1)
 
-result = 100 - (round((float(actualCO2) / float(totalCO2)), 2) * 100)
-
-#If you are 100% efficent then prints 'you are carbon neutral! 
+#If you are 100% efficent then prints 'you are carbon neutral!
 #Congrats! If not then it shows the percentage
-if result == 100: 
+if result == 100:
   print("You are carbon neutral! Congrats!")
-else: 
-  print("You are", result, "% more efficent than just using car to travel!")
+else:
+  print("You are ", result, "% more efficent than just using car to travel!", sep = "")
 
-#Grams of CO2 eliminated in actual compared to completely car in the total distance
-savedCO2 = totalCO2 - actualCO2
+#Grams of CO2 emmision saved in actual compared to all car in the total CO2
+savedCO2 = round((totalCO2 - actualCO2) * 1000, 1)
+print("You saved: ", savedCO2, "grams of CO2")
