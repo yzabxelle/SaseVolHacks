@@ -19,6 +19,7 @@ kmRail = float(input("Kilometers in Rail: "))
 #input from user for kilometers in Carbon Neutral
 kmCarbonNull = float(input("Kilometers in Biking/Walking/Running: "))
 
+#If all modes of travel km is 0 then this will run.
 if kmCar == kmBus == kmRail == kmCarbonNull == 0:
   print("Have some walk... Please...")
   exit()
