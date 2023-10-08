@@ -39,8 +39,5 @@ if result == 100:
 else: 
   print("You are", result, "% more efficent than just using car to travel!")
 
-#Grams of CO2 eliminated in acutal compared to completely car in the total distance
-savedCO2 = totalCO2 - actualCO2!")
-
-#Grams of CO2 eliminated in acutal compared to completely car in the total distance
+#Grams of CO2 eliminated in actual compared to completely car in the total distance
 savedCO2 = totalCO2 - actualCO2
