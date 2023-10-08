@@ -1,5 +1,4 @@
-#intialized the values for car, bus, rail, and carbon neutral 
-# of transport
+#intialized the values for car, bus, rail, and carbon neutral of transport
 #Kilograms of carbon diocide per passenger kilometer
 #grams was too big for python to calculate.
 car = 0.192
